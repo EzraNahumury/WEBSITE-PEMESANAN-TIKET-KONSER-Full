@@ -1,0 +1,520 @@
+
+.content{color: black;}
+@font-face {
+    font-family: 'Secular One';
+    src: url(../fonts/SecularOne-Regular.ttf);
+}  
+body{
+    background-image: linear-gradient(#03050F,#050D28,#194D96,#050D28,#03050F);
+}
+
+.buttonlokasi{
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 40px;
+    padding: 12px 20px 12px;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border: solid #323F4B;
+    background-color: #E7F2FF;
+    color: #323F4B;
+    font-size: 15px;
+
+    word-spacing: 3px;
+    border: solid #323F4B;
+    cursor: pointer;
+}
+
+.buttonlokasi img{
+    width: 15px;
+    height: 17px;
+}
+
+.masuk{
+    display: inline-block;
+    border-radius: 15px;
+    border: #050D28;
+    background: #E7F2FF;
+    color: #041D3C;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.masuk:hover{
+    background-color: wheat;
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+      2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
+}
+
+
+.button:hover{
+    background: wheat;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One';
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-image: linear-gradient(#041D3C,#03050F);
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem #03050F;
+}
+header .judul{
+    font-size: 30px;
+    color: #FBFBFB;
+    font-weight: bolder;
+    font-family: 'Secular One';
+    letter-spacing: 3px;
+}
+
+header .logo span{
+    color: #FBFBFB;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+header .navbar a{
+    font-size: 20px;
+    color: #FBFBFB;
+}
+
+header .navbar a:hover{
+    color: wheat;
+}
+
+header .icons {
+    float: left;
+    margin-right: 20px;
+    color: #FBFBFB;
+}
+
+header .icons img{
+    width: 35px;
+    height: 35px;
+}
+
+
+section{
+    padding: 0.5rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 58vh;
+    width:auto;
+    background: url(gambar/buatheader5.png) no-repeat;
+    background-position: center;
+    background-size: auto;
+    box-shadow: 10px #041D3C;
+    background-repeat:repeat-x;
+    box-shadow: #041D3C;
+    font-family: 'Secular One';
+}
+
+.home .content h3{
+    font-size: 40px;
+    padding-left: 50px;
+    color: #FBFBFB;
+}
+
+.home .content span{
+    font-size: 20px;
+    color: #FBFBFB;
+    padding-left: 50px;
+}
+
+.home .content p{
+    color: #FBFBFB;
+    font-size: 13px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+
+.search_bar .pencarian{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: #03050F;
+    border: solid #03050F;
+    border-radius: 20px;
+    width: fit-content;
+    margin:auto;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.search_bar .pencarian .tanggal{
+    border: solid #323F4B;
+    background-color: #E7F2FF;
+    color: #323F4B;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 30px;
+    word-spacing: 3px;
+}
+
+.search_bar .pencarian .tanggal .input_tanggal{
+    background-color: transparent;
+    color: #323F4B;
+    font-size: 15px;
+}
+
+.buttonhome {
+    background-color: #E7F2FF;
+    color: #323F4B;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 30px;
+    word-spacing: 3px;
+    border: solid #323F4B;
+    cursor: pointer;
+  }
+
+.buttonhome:hover{
+    background-color: wheat;
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+      2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.5);
+}
+
+
+.paste-button {
+   margin-top: -9px;
+  }
+  
+.dropdown-content {
+    display: none;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    max-width: 175px;
+    background-color: #E7F2FF;
+    border: solid #323F4B;
+    border-radius: 0px 15px 10px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #323F4B;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+    width: 300px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: wheat;
+    color: #212121;
+    max-width: 169px;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #212121;
+    color: wheat;
+    max-width: 169px;
+  }
+  
+  .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+    max-width: 170px;
+  }
+  
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+  
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+
+.search_bar .pencarian .penamaan{
+    border: solid #323F4B;
+    background-color: #E7F2FF;
+    color: #323F4B;
+    font-size: 15px;
+    padding: 12px 15px 12px 15px;
+    border-radius: 30px;
+    word-spacing: 3px;
+    width: fit-content;
+}
+
+.search_bar{
+    margin-top: 20px;
+}
+.search_bar .pencarian .penamaan img{
+    float: right;
+    margin-right: 5px;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+}
+
+.search_bar .pencarian .penamaan .input{
+    background-color: transparent;
+    font-size: 15px;
+    width: fit-content;
+    color: #323F4B;
+}
+
+.search_bar .pencarian .cari{
+    border: solid #323F4B;
+    background-color: #3290f4;
+    color: #050D28;
+    font-size: 15px;
+    padding: 12px 30px 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search_bar .pencarian .cari:hover{
+    background-color: wheat;
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+      2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.rekomen{
+    padding-left: 50px;
+}
+
+.rekomen .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 30px;
+    margin-left: 130px;
+    margin-right: 50px;
+
+}
+
+.rekomen .box-container .box{
+    width: 250px;
+    height: 400px;
+    box-shadow: 0 10px #03050F;
+    cursor: pointer;
+    box-sizing:border-box;
+    border-radius: 25px;
+    border: 0rem solid black;
+    /* position: relative; */
+    background-color: #FBFBFB;
+    padding: 12px;
+}
+
+.rekomen .box-container .box .image{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.rekomen .box-container .box .image img{
+    height: 200px;
+    transform: scale(1.2);
+}
+
+.rekomen .box-container .box:hover .image img{
+    transform: scale(1.7);
+}
+
+.rekomen .heading{
+    font-size: 25px;
+    color: #FBFBFB;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 160px;
+    text-shadow: 2px 4px #03050F;
+    word-spacing: 10px;
+    letter-spacing: 0.8px;
+}
+
+.rekomen .heading:hover{
+    color: wheat;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.rekomen .box-container .content .lokasi{
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    text-align: left;
+    float: left;
+    margin-top: 5px;
+}
+
+.rekomen .box-container .content .tanggal{
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    text-align: right;
+    margin-top: 5px;
+}
+
+.rekomen .box-container .content .tanggal img{
+    margin-right: 5px;
+    width: 15px;
+    margin-top: 5px;
+    height: 15px;
+}
+
+.rekomen .box-container .content .lokasi img{
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.rekomen .box-container .content .nama_konser{
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.rekomen .box-container .content h4{
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 400 !important;
+}
+
+.rekomen .box-container .content .harga{
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: orangered;
+    letter-spacing: 1px;
+    float: left;
+    text-align: left;
+}
+
+.rekomen .box-container .content .ketersediaan{
+    margin-top: 2px;
+    font-size: 15px;
+    color: green;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.judul_lagi{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #FBFBFB;
+    letter-spacing: 2px;
+    padding: 30px 50px 20px 50px;
+}
+
+footer{
+    background-image: linear-gradient(#03050F,#041D3C);
+}
+
+
+footer .socialIcons{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer .socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    /* margin-top: 20px; */
+    background-color: white;
+    margin: 20px;
+    border-radius: 30%;
+    margin-top: -5px;
+
+}
+
+footer .socialIcons a i{
+    font-size: 30px;
+    color: black;
+    opacity: 0.9;
+}
+
+footer .socialIcons a:hover{
+    background-color: #03050F;
+    transition: 0.5s;
+}
+
+footer .socialIcons a:hover i{
+    background-color: white;
+    transition: 1s;
+}
+
+footer .footernav{
+    margin: 5px ;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+footer .footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+footer .footernav ul li a{
+    color: white;
+    margin: 5px 25px 25px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+footer .footernav ul li a:hover{
+    opacity: 1;
+}
+
+@media (max-width: 700px){
+    .footernav ul{
+        flex-direction: clomun;
+    }
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

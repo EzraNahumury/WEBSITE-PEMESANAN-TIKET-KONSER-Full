@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", "sans-serif";
+}
+
+html {
+  background-color: #efefef;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #032030;
+  padding: 10px;
+  z-index: 1;
+}
+
+header img {
+  width: 50px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1325px;
+  margin: auto;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  gap: 25px;
+  position: relative;
+  margin-right: 1rem ;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: #d5deef;
+  font-size: 40px;
+  font-weight: 620;
+  position: relative;
+  left: -60px;
+  top: 5px;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: #d5deef;
+  font-weight: 550;
+  padding: 5px 8px;
+  border-radius: 3.5px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul a:hover {
+  background-color: #d5deef;
+  color: #8aaee0;
+}
+
+/* Adjusting the positioning */
+.navbar .logo {
+  flex-grow: 1;
+}
+
+.navbar ul {
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+/* akhir navigasi */
+
+/* Mengatur tampilan tabel nama pembeli*/
+#update_data {
+  width: 50%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+#update_data th,
+#update_data td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#update_data th {
+  background-color: #395886;
+  color: white;
+}
+
+#update_data tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#update_data button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#update_data button:hover {
+  background-color: #395886;
+}
+
+/* Akhir mengatur tampilan tabel nama pembeli */
+
+/* Mengatur tampilan form update data */
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background-color: #efefef;
+  padding-bottom: 70px;
+}
+
+/* Form styles */
+.container form {
+  padding: 20px;
+  width: 49%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container form .row .col {
+  flex: 1 1 250px;
+}
+
+.container form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .title:nth-child(1) {
+  font-size: 45px;
+  color: #333;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputbox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputbox input {
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputbox input:focus {
+  border: 1px solid #000;
+}
+
+.container form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .row .col .flex .inputbox {
+  margin-top: 5px;
+}
+
+.container form .submit-btn {
+  width: 75%;
+  padding: 12px;
+  font-size: 17px;
+  margin-top: 10px;
+  float: right;
+  color: #395886;
+  background-color: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #395886;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #395886;
+  text-decoration: none;
+}
+
+.container form .submit-btn:hover {
+  color: #fff;
+  box-shadow: inset 0 -100px 0 0 #395886;
+}
+
+/* Akhir mengatur tampilan form update data */
+
+.profile {
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25%;
+  background-color: white;
+}
+
+#profileIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a,
+.dropdown-menu p {
+  display: block;
+  width: 100px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+footer {
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: #032030;
+}
+
+.f2 {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #032030;
+  padding-top: 1em;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #d5deef;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #006da4;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+  color: white;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  /* color: #ffffff; */
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+footer p {
+  letter-spacing: 10px;
+  text-align: center;
+}
